@@ -37,11 +37,7 @@ const Header = () => {
                             Policy |
                             </Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/faq">
-                            FAQs |
-                            </Link>
-                        </li>
+                        
                         <li className="nav-item dropdown">
                             <Link
                             className="nav-link dropdown-toggle"
