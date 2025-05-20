@@ -96,11 +96,7 @@ const Header = () => {
                             My Account
                             </Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link active" to="/feedback">
-                            Feedback
-                            </Link>
-                        </li>
+                       
                         <li className="nav-item">
                             <Link className="nav-link active" to="/contact">
                             Contact Us
