@@ -1,0 +1,128 @@
+/* admin dashbaord css */
+/* AdminDashboard.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .admin-dashboard {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+  }
+  
+  .sidebar {
+    width: 240px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    transition: width 0.3s;
+    overflow: hidden;
+    position: relative;
+    padding-top: 1rem;
+  }
+  
+  .sidebar.collapsed {
+    width: 70px;
+  }
+  
+  .sidebar .toggle-btn {
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .sidebar-item {
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+  
+  .sidebar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar-icon {
+    font-size: 1.2rem;
+  }
+  
+  .sidebar-label {
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .topbar {
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .admin-profile {
+    font-weight: 500;
+  }
+  
+  .dashboard-content {
+    padding: 2rem;
+    background-color: #f5f7fa;
+  }
+  
+  .gradient-card {
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    color: #333;
+    border-radius: 12px;
+    border: none;
+  }
+  
+  .chart-placeholder {
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    font-style: italic;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: fixed;
+      z-index: 1000;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .main-content {
+      margin-left: 70px;
+    }
+  
+    .sidebar.collapsed {
+      width: 0;
+      transform: translateX(-100%);
+    }
+  }
+  

@@ -1,0 +1,45 @@
+
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size:large;
+    list-style-type: none;
+}
+
+#h li a{
+    color:white;
+    text-decoration: none;
+    list-style-type: none;
+}
+#w li a{
+    color:white;
+    text-decoration: none;
+    list-style-type: none;
+}
+#i li a{
+    color:white;
+    text-decoration: none;
+    list-style-type: none;
+}
+#l li a{
+    color:white;
+    text-decoration: none;
+    list-style-type: none;
+}
+#login {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+  }
+  #registration{
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
